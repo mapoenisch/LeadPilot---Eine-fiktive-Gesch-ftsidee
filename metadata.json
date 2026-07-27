@@ -1,0 +1,6 @@
+{
+  "name": "LeadPilot",
+  "description": "KI-gestütztes Sales-CRM für den B2B-Mittelstand",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
