@@ -49,21 +49,21 @@ export function InterfaceTour() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50">Tour the Interface</h2>
+            <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]">Tour the Interface</h2>
             <h3 className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter">
-              Klarheit im<br /><span className="font-serif italic font-normal tracking-normal text-[#1A1A1A]/40">Dashboard.</span>
+              Klarheit im<br /><span className="font-serif italic font-normal tracking-normal text-[#23BAA4]">Dashboard.</span>
             </h3>
           </div>
           <div className="flex gap-4 pb-4">
             <button 
               onClick={prev}
-              className="w-12 h-12 border border-[#1A1A1A]/20 rounded-full flex items-center justify-center hover:bg-[#1A1A1A] hover:text-white transition-colors"
+              className="w-12 h-12 border border-[#1A1A1A]/20 rounded-full flex items-center justify-center hover:bg-[#E56014] hover:text-white hover:border-[#E56014] transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
             <button 
               onClick={next}
-              className="w-12 h-12 border border-[#1A1A1A]/20 rounded-full flex items-center justify-center hover:bg-[#1A1A1A] hover:text-white transition-colors"
+              className="w-12 h-12 border border-[#1A1A1A]/20 rounded-full flex items-center justify-center hover:bg-[#E56014] hover:text-white hover:border-[#E56014] transition-colors"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -80,7 +80,7 @@ export function InterfaceTour() {
                    onClick={() => setCurrentIndex(index)}
                  >
                    <div className="flex items-center gap-4 mb-4">
-                     <span className="text-xl font-serif italic text-[#1A1A1A]">0{index + 1}.</span>
+                     <span className="text-xl font-serif italic text-[#23BAA4]">0{index + 1}.</span>
                      <h4 className="text-sm uppercase tracking-widest font-bold text-[#1A1A1A]">{slide.title}</h4>
                    </div>
                    <AnimatePresence>
@@ -123,7 +123,7 @@ export function InterfaceTour() {
                        initial={{ opacity: 0, scale: 0 }}
                        animate={{ opacity: 1, scale: 1 }}
                        transition={{ delay: 0.5 + (i * 0.2), type: "spring" }}
-                       className="absolute flex items-center gap-2 bg-[#1A1A1A] text-white px-3 py-2 text-[10px] uppercase tracking-widest font-bold shadow-2xl"
+                       className="absolute flex items-center gap-2 bg-[#E56014] text-white px-3 py-2 text-[10px] uppercase tracking-widest font-bold shadow-2xl"
                        style={{ top: ann.top, left: ann.left }}
                      >
                        <Plus className="w-3 h-3" />

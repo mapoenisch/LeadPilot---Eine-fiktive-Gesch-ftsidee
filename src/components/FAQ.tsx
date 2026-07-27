@@ -40,9 +40,9 @@ export function FAQ() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="sticky top-32"
             >
-              <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50">FAQ</h2>
+              <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]">FAQ</h2>
               <h3 className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter mb-8">
-                Häufige<br /><span className="font-serif italic font-normal tracking-normal text-[#1A1A1A]/40">Fragen.</span>
+                Häufige<br /><span className="font-serif italic font-normal tracking-normal text-[#23BAA4]">Fragen.</span>
               </h3>
               <p className="text-sm leading-relaxed text-[#1A1A1A]/70 max-w-sm">
                 Antworten auf die wichtigsten Fragen zur Einführung, Sicherheit und Nutzung von LeadPilot.
@@ -67,10 +67,10 @@ export function FAQ() {
                       onClick={() => toggleFAQ(index)}
                       className="w-full flex justify-between items-center py-8 text-left group"
                     >
-                      <span className="font-serif italic text-xl md:text-2xl text-[#1A1A1A] group-hover:text-[#1A1A1A]/60 transition-colors pr-8">
+                      <span className="font-serif italic text-xl md:text-2xl text-[#1A1A1A] group-hover:text-[#E56014] transition-colors pr-8">
                         {faq.question}
                       </span>
-                      <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-[#1A1A1A]/20 group-hover:bg-[#1A1A1A] group-hover:text-white transition-colors text-[#1A1A1A]">
+                      <span className={`shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-[#1A1A1A]/20 transition-colors ${isOpen ? 'bg-[#E56014] text-white border-[#E56014]' : 'group-hover:bg-[#E56014] group-hover:text-white group-hover:border-[#E56014] text-[#1A1A1A]'}`}>
                         {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                       </span>
                     </button>

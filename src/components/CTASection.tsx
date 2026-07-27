@@ -18,7 +18,7 @@ export function CTASection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-white/50">Next Steps</h2>
+                <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#23BAA4]">Next Steps</h2>
                 <h3 className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter mb-8">
                   Verlorene Leads sind ein Zeichen von <span className="font-serif italic font-normal tracking-normal text-white/60">fehlender Struktur.</span>
                 </h3>
@@ -29,7 +29,7 @@ export function CTASection() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
                   <button 
                     onClick={() => setIsSignupOpen(true)}
-                    className="bg-white text-[#1A1A1A] px-10 py-5 text-xs uppercase tracking-widest font-bold hover:bg-[#F9F8F6] transition-colors"
+                    className="bg-[#E56014] text-white px-10 py-5 text-xs uppercase tracking-widest font-bold hover:bg-[#c95310] transition-colors"
                   >
                     Kostenlos testen
                   </button>
@@ -42,7 +42,7 @@ export function CTASection() {
             </div>
             
             <div className="md:col-span-4 flex justify-end">
-               <div className="text-[200px] font-serif italic leading-none text-white/5 pointer-events-none">
+               <div className="text-[200px] font-serif italic leading-none text-[#23BAA4]/20 pointer-events-none">
                   LP.
                </div>
             </div>

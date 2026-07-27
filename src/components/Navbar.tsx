@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Rocket } from 'lucide-react';
+import { Logo } from './Logo';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,26 +10,26 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-end h-24 pb-6">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-black text-[#1A1A1A] tracking-tighter uppercase italic">LeadPilot.</span>
+            <Logo />
           </div>
           
           <div className="hidden md:flex items-center gap-10 text-[10px] uppercase tracking-widest font-bold">
-            <a href="#problem" className="text-[#1A1A1A] hover:text-[#1A1A1A]/60 transition-colors">Problem</a>
-            <a href="#funktionen" className="text-[#1A1A1A] hover:text-[#1A1A1A]/60 transition-colors">Funktionen</a>
-            <a href="#preise" className="text-[#1A1A1A] hover:text-[#1A1A1A]/60 transition-colors">Preise</a>
+            <a href="#problem" className="text-[#1A1A1A] hover:text-[#E56014] transition-colors">Problem</a>
+            <a href="#funktionen" className="text-[#1A1A1A] hover:text-[#E56014] transition-colors">Funktionen</a>
+            <a href="#preise" className="text-[#1A1A1A] hover:text-[#E56014] transition-colors">Preise</a>
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            <button className="text-[10px] uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#1A1A1A]/60 border-b border-[#1A1A1A] pb-1">
+            <button className="text-[10px] uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#E56014] border-b border-[#1A1A1A] hover:border-[#E56014] pb-1 transition-colors">
               Login
             </button>
-            <button className="bg-[#1A1A1A] text-white px-8 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#333] transition-colors">
+            <button className="bg-[#E56014] text-white px-8 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#c95310] transition-colors">
               14 Tage Testen
             </button>
           </div>
 
           <div className="md:hidden flex items-center mb-2">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-[#1A1A1A]">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-[#1A1A1A] hover:text-[#E56014]">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -38,14 +39,14 @@ export function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-[#F9F8F6] border-b border-[#1A1A1A]/10 px-4 pt-2 pb-6 space-y-6">
-          <a href="#problem" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A]" onClick={() => setIsOpen(false)}>Problem</a>
-          <a href="#funktionen" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A]" onClick={() => setIsOpen(false)}>Funktionen</a>
-          <a href="#preise" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A]" onClick={() => setIsOpen(false)}>Preise</a>
+          <a href="#problem" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#E56014]" onClick={() => setIsOpen(false)}>Problem</a>
+          <a href="#funktionen" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#E56014]" onClick={() => setIsOpen(false)}>Funktionen</a>
+          <a href="#preise" className="block text-xs uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#E56014]" onClick={() => setIsOpen(false)}>Preise</a>
           <div className="pt-6 border-t border-[#1A1A1A]/10 flex flex-col gap-4">
-            <button className="w-full text-left text-xs uppercase tracking-widest font-bold text-[#1A1A1A]">
+            <button className="w-full text-left text-xs uppercase tracking-widest font-bold text-[#1A1A1A] hover:text-[#E56014]">
               Login
             </button>
-            <button className="w-full text-center bg-[#1A1A1A] text-white px-4 py-4 text-xs uppercase tracking-widest font-bold">
+            <button className="w-full text-center bg-[#E56014] text-white px-4 py-4 text-xs uppercase tracking-widest font-bold hover:bg-[#c95310]">
               Kostenlos testen
             </button>
           </div>

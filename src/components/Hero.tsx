@@ -19,7 +19,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50">
+                <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]">
                   Automatisierte Lead-Generierung
                 </h2>
               </motion.div>
@@ -50,13 +50,13 @@ export function Hero() {
               >
                 <button 
                   onClick={() => setIsSignupOpen(true)}
-                  className="w-full sm:w-auto bg-[#1A1A1A] text-white px-10 py-5 text-xs uppercase tracking-widest font-bold hover:bg-[#333] transition-colors"
+                  className="w-full sm:w-auto bg-[#E56014] text-white px-10 py-5 text-xs uppercase tracking-widest font-bold hover:bg-[#c95310] transition-colors"
                 >
                   14 Tage kostenlos testen
                 </button>
                 <button 
                   onClick={() => setIsDemoOpen(true)}
-                  className="group flex items-center gap-3 w-full sm:w-auto text-[#1A1A1A] font-serif italic text-2xl hover:opacity-70 transition-opacity"
+                  className="group flex items-center gap-3 w-full sm:w-auto text-[#1A1A1A] font-serif italic text-2xl hover:text-[#23BAA4] transition-colors"
                 >
                   <span className="underline underline-offset-8 decoration-1">Produktdemo ansehen</span>
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-2" />
@@ -72,19 +72,18 @@ export function Hero() {
             >
               <div className="space-y-12 mb-12 md:mb-0">
                 <div>
-                  <span className="text-[48px] font-serif italic block mb-2 leading-none">01.</span>
+                  <span className="text-[48px] font-serif italic block mb-2 leading-none text-[#23BAA4]">01.</span>
                   <h3 className="text-xs uppercase tracking-widest font-bold mb-3">Zentrales CRM</h3>
                   <p className="text-sm leading-relaxed text-[#1A1A1A]/60">Bündeln Sie alle Kundeninteraktionen an einem Ort. Keine verstreuten Excel-Listen mehr.</p>
                 </div>
                 <div>
-                  <span className="text-[48px] font-serif italic block mb-2 leading-none">02.</span>
+                  <span className="text-[48px] font-serif italic block mb-2 leading-none text-[#23BAA4]">02.</span>
                   <h3 className="text-xs uppercase tracking-widest font-bold mb-3">Smart Automation</h3>
                   <p className="text-sm leading-relaxed text-[#1A1A1A]/60">Individuelle Workflows, die Leads qualifizieren, während Ihr Team sich auf Abschlüsse fokussiert.</p>
                 </div>
               </div>
-
               <div className="pt-10 border-t border-[#1A1A1A]/10">
-                <div className="text-[64px] font-black tracking-tighter leading-none">+22%</div>
+                <div className="text-[64px] font-black tracking-tighter leading-none text-[#E56014]">+22%</div>
                 <div className="text-[10px] uppercase tracking-widest font-bold text-[#1A1A1A]/40 mt-2">Conversion Steigerung</div>
               </div>
             </motion.div>

@@ -67,9 +67,9 @@ export function Pricing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
             <div className="max-w-2xl">
-              <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50">Investment</h2>
+              <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]">Investment</h2>
               <h3 className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter mb-8 md:mb-0">
-                Einfache<br /><span className="font-serif italic font-normal tracking-normal text-[#1A1A1A]/40">Preise.</span>
+                Einfache<br /><span className="font-serif italic font-normal tracking-normal text-[#23BAA4]">Preise.</span>
               </h3>
             </div>
             <div className="flex flex-col items-start md:items-end gap-8">
@@ -77,7 +77,7 @@ export function Pricing() {
                 <button
                   onClick={() => setIsAnnual(false)}
                   className={`px-6 py-3 text-xs uppercase tracking-widest font-bold transition-colors ${
-                    !isAnnual ? 'bg-[#1A1A1A] text-white' : 'text-[#1A1A1A]/60 hover:text-[#1A1A1A]'
+                    !isAnnual ? 'bg-[#E56014] text-white' : 'text-[#1A1A1A]/60 hover:text-[#1A1A1A]'
                   }`}
                 >
                   Monatlich
@@ -85,10 +85,10 @@ export function Pricing() {
                 <button
                   onClick={() => setIsAnnual(true)}
                   className={`px-6 py-3 text-xs uppercase tracking-widest font-bold transition-colors flex items-center gap-2 ${
-                    isAnnual ? 'bg-[#1A1A1A] text-white' : 'text-[#1A1A1A]/60 hover:text-[#1A1A1A]'
+                    isAnnual ? 'bg-[#E56014] text-white' : 'text-[#1A1A1A]/60 hover:text-[#1A1A1A]'
                   }`}
                 >
-                  Jährlich <span className={`text-[10px] px-2 py-0.5 rounded-full ${isAnnual ? 'bg-white/20' : 'bg-[#1A1A1A]/10 text-[#1A1A1A]'}`}>-20%</span>
+                  Jährlich <span className={`text-[10px] px-2 py-0.5 rounded-full ${isAnnual ? 'bg-white/20' : 'bg-[#E56014]/10 text-[#E56014]'}`}>-20%</span>
                 </button>
               </div>
               <div className="max-w-sm pb-2 border-b border-[#1A1A1A]/10 md:text-right">
@@ -116,7 +116,7 @@ export function Pricing() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
                 {tier.highlighted && (
-                  <div className="absolute top-0 right-0 bg-[#1A1A1A] text-white text-[10px] font-bold uppercase tracking-widest py-2 px-4">
+                  <div className="absolute top-0 right-0 bg-[#E56014] text-white text-[10px] font-bold uppercase tracking-widest py-2 px-4">
                     Am beliebtesten
                   </div>
                 )}
@@ -144,7 +144,7 @@ export function Pricing() {
                 <ul className="space-y-6 mb-12 flex-grow">
                   {tier.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start gap-4">
-                      <span className="w-1.5 h-1.5 bg-[#1A1A1A] rounded-full mt-2 shrink-0"></span>
+                      <span className={`w-1.5 h-1.5 rounded-full mt-2 shrink-0 ${tier.highlighted ? 'bg-[#E56014]' : 'bg-[#23BAA4]'}`}></span>
                       <span className="text-sm text-[#1A1A1A]/80">{feature}</span>
                     </li>
                   ))}
@@ -154,7 +154,7 @@ export function Pricing() {
                   onClick={() => handlePlanClick(`${tier.name} Plan`)}
                   className={`w-full py-5 text-xs uppercase tracking-widest font-bold transition-colors ${
                     tier.highlighted 
-                      ? 'bg-[#1A1A1A] text-white hover:bg-[#333]' 
+                      ? 'bg-[#E56014] text-white hover:bg-[#c95310]' 
                       : 'bg-transparent border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white'
                   }`}
                 >

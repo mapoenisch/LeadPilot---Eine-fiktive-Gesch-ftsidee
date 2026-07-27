@@ -36,7 +36,7 @@ export function Features() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-2xl"
           >
-            <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50">Software</h2>
+            <h2 className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]">Software</h2>
             <h3 className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter">
               Alles für den<br />strukturierten<br /><span className="font-serif italic font-normal tracking-normal text-[#1A1A1A]/40">Vertrieb.</span>
             </h3>
@@ -67,9 +67,9 @@ export function Features() {
                 transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
               >
                 <div className="mb-12">
-                  <Icon className="h-8 w-8 text-[#1A1A1A] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                  <Icon className="h-8 w-8 text-[#23BAA4] transition-colors duration-300" strokeWidth={1.5} />
                 </div>
-                <h4 className="text-xs uppercase tracking-widest font-bold mb-4">{feature.title}</h4>
+                <h4 className="text-xs uppercase tracking-widest font-bold mb-4 group-hover:text-[#23BAA4] transition-colors">{feature.title}</h4>
                 <p className="text-sm leading-relaxed text-[#1A1A1A]/60 group-hover:text-white/70 transition-colors duration-300">
                   {feature.description}
                 </p>

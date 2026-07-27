@@ -25,7 +25,7 @@ export function KeyMetrics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#1A1A1A]/50"
+              className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#E56014]"
             >
               Die Resultate
             </motion.h2>
@@ -75,7 +75,7 @@ export function KeyMetrics() {
                     contentStyle={{ backgroundColor: '#1A1A1A', color: '#fff', border: 'none', borderRadius: '0px', fontSize: '12px' }}
                     itemStyle={{ color: '#fff' }}
                   />
-                  <Bar dataKey="rate" fill="#1A1A1A" radius={[2, 2, 0, 0]} maxBarSize={60} />
+                  <Bar dataKey="rate" fill="#E56014" radius={[2, 2, 0, 0]} maxBarSize={60} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -102,7 +102,7 @@ export function KeyMetrics() {
                     contentStyle={{ backgroundColor: '#1A1A1A', color: '#fff', border: 'none', borderRadius: '0px', fontSize: '12px' }}
                     itemStyle={{ color: '#fff' }}
                   />
-                  <Line type="monotone" dataKey="time" stroke="#1A1A1A" strokeWidth={3} dot={{ fill: '#1A1A1A', strokeWidth: 2, r: 4 }} activeDot={{ r: 6 }} />
+                  <Line type="monotone" dataKey="time" stroke="#23BAA4" strokeWidth={3} dot={{ fill: '#23BAA4', strokeWidth: 2, r: 4 }} activeDot={{ r: 6 }} />
                 </LineChart>
               </ResponsiveContainer>
             </div>

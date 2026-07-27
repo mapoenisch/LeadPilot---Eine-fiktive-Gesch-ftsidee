@@ -33,7 +33,7 @@ export function ImplementationStrategy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-white/50"
+              className="text-[10px] uppercase tracking-[0.4em] mb-8 font-semibold text-[#23BAA4]"
             >
               Implementation Strategy
             </motion.h2>
@@ -44,7 +44,7 @@ export function ImplementationStrategy() {
               transition={{ delay: 0.1 }}
               className="text-[40px] md:text-[60px] leading-[0.9] font-black uppercase tracking-tighter"
             >
-              Startklar in<br /><span className="font-serif italic font-normal tracking-normal text-white/40">4 Wochen.</span>
+              Startklar in<br /><span className="font-serif italic font-normal tracking-normal text-[#E56014]">4 Wochen.</span>
             </motion.h3>
           </div>
           <motion.div 
@@ -78,7 +78,7 @@ export function ImplementationStrategy() {
                     className={`w-full md:w-1/2 ${isEven ? 'md:pr-16 lg:pr-24 text-left md:text-right' : 'md:order-3 md:pl-16 lg:pl-24 text-left'}`}
                   >
                     <div className="mb-4">
-                      <span className="text-[10px] uppercase tracking-widest font-bold text-white/50 mb-2 block">{step.week}</span>
+                      <span className="text-[10px] uppercase tracking-widest font-bold text-[#E56014] mb-2 block">{step.week}</span>
                       <h4 className="text-2xl font-serif italic text-white">{step.title}</h4>
                     </div>
                     <p className="text-sm leading-relaxed text-white/70 max-w-sm ml-auto mr-auto md:mx-0">
@@ -87,7 +87,7 @@ export function ImplementationStrategy() {
                   </motion.div>
 
                   {/* Center Node */}
-                  <div className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full border-4 border-[#1A1A1A] bg-white items-center justify-center z-10`}>
+                  <div className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full border-4 border-[#1A1A1A] bg-[#23BAA4] items-center justify-center z-10`}>
                      <span className="text-[10px] font-bold text-[#1A1A1A]">{index + 1}</span>
                   </div>
 
